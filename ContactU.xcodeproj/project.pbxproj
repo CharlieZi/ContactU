@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		CBAB5C051AE688770055AD6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB5C041AE688770055AD6E /* AppDelegate.swift */; };
-		CBAB5C081AE688770055AD6E /* ContactU.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBAB5C061AE688770055AD6E /* ContactU.xcdatamodeld */; };
 		CBAB5C0A1AE688770055AD6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB5C091AE688770055AD6E /* ViewController.swift */; };
 		CBAB5C0D1AE688770055AD6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAB5C0B1AE688770055AD6E /* Main.storyboard */; };
 		CBAB5C0F1AE688770055AD6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAB5C0E1AE688770055AD6E /* Images.xcassets */; };
 		CBAB5C121AE688770055AD6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBAB5C101AE688770055AD6E /* LaunchScreen.xib */; };
 		CBAB5C1E1AE688780055AD6E /* ContactUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB5C1D1AE688780055AD6E /* ContactUTests.swift */; };
+		CBAB5C291AE689830055AD6E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBAB5C271AE689830055AD6E /* Model.xcdatamodeld */; };
+		CBAB5C2B1AE68D350055AD6E /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB5C2A1AE68D350055AD6E /* Contact.swift */; };
+		CBAB5C2D1AE68D350055AD6E /* ToDoitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB5C2C1AE68D350055AD6E /* ToDoitem.swift */; };
+		CBAB5C2F1AE6909C0055AD6E /* SwiftCoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB5C2E1AE6909C0055AD6E /* SwiftCoreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +33,6 @@
 		CBAB5BFF1AE688770055AD6E /* ContactU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAB5C031AE688770055AD6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBAB5C041AE688770055AD6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBAB5C071AE688770055AD6E /* ContactU.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactU.xcdatamodel; sourceTree = "<group>"; };
 		CBAB5C091AE688770055AD6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBAB5C0C1AE688770055AD6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBAB5C0E1AE688770055AD6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -38,6 +40,10 @@
 		CBAB5C171AE688780055AD6E /* ContactUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAB5C1C1AE688780055AD6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBAB5C1D1AE688780055AD6E /* ContactUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUTests.swift; sourceTree = "<group>"; };
+		CBAB5C281AE689830055AD6E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		CBAB5C2A1AE68D350055AD6E /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = ../Contact.swift; sourceTree = "<group>"; };
+		CBAB5C2C1AE68D350055AD6E /* ToDoitem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoitem.swift; path = ../ToDoitem.swift; sourceTree = "<group>"; };
+		CBAB5C2E1AE6909C0055AD6E /* SwiftCoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftCoreDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +85,13 @@
 		CBAB5C011AE688770055AD6E /* ContactU */ = {
 			isa = PBXGroup;
 			children = (
+				CBAB5C311AE6A0540055AD6E /* helperClass */,
 				CBAB5C041AE688770055AD6E /* AppDelegate.swift */,
 				CBAB5C091AE688770055AD6E /* ViewController.swift */,
 				CBAB5C0B1AE688770055AD6E /* Main.storyboard */,
 				CBAB5C0E1AE688770055AD6E /* Images.xcassets */,
 				CBAB5C101AE688770055AD6E /* LaunchScreen.xib */,
-				CBAB5C061AE688770055AD6E /* ContactU.xcdatamodeld */,
+				CBAB5C301AE6A0490055AD6E /* DataModel */,
 				CBAB5C021AE688770055AD6E /* Supporting Files */,
 			);
 			path = ContactU;
@@ -113,6 +120,24 @@
 				CBAB5C1C1AE688780055AD6E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBAB5C301AE6A0490055AD6E /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBAB5C2C1AE68D350055AD6E /* ToDoitem.swift */,
+				CBAB5C2A1AE68D350055AD6E /* Contact.swift */,
+				CBAB5C271AE689830055AD6E /* Model.xcdatamodeld */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		CBAB5C311AE6A0540055AD6E /* helperClass */ = {
+			isa = PBXGroup;
+			children = (
+				CBAB5C2E1AE6909C0055AD6E /* SwiftCoreDataHelper.swift */,
+			);
+			name = helperClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBAB5C2D1AE68D350055AD6E /* ToDoitem.swift in Sources */,
+				CBAB5C2B1AE68D350055AD6E /* Contact.swift in Sources */,
+				CBAB5C2F1AE6909C0055AD6E /* SwiftCoreDataHelper.swift in Sources */,
 				CBAB5C0A1AE688770055AD6E /* ViewController.swift in Sources */,
-				CBAB5C081AE688770055AD6E /* ContactU.xcdatamodeld in Sources */,
 				CBAB5C051AE688770055AD6E /* AppDelegate.swift in Sources */,
+				CBAB5C291AE689830055AD6E /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +443,7 @@
 				CBAB5C231AE688780055AD6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBAB5C241AE688780055AD6E /* Build configuration list for PBXNativeTarget "ContactUTests" */ = {
 			isa = XCConfigurationList;
@@ -423,17 +452,18 @@
 				CBAB5C261AE688780055AD6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CBAB5C061AE688770055AD6E /* ContactU.xcdatamodeld */ = {
+		CBAB5C271AE689830055AD6E /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CBAB5C071AE688770055AD6E /* ContactU.xcdatamodel */,
+				CBAB5C281AE689830055AD6E /* Model.xcdatamodel */,
 			);
-			currentVersion = CBAB5C071AE688770055AD6E /* ContactU.xcdatamodel */;
-			path = ContactU.xcdatamodeld;
+			currentVersion = CBAB5C281AE689830055AD6E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
