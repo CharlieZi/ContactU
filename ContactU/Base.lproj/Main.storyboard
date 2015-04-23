@@ -4,16 +4,16 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Item Table View Controller-->
         <scene sceneID="CBq-qL-QqF">
             <objects>
-                <tableViewController id="N2K-aI-rYa" sceneMemberID="viewController">
+                <tableViewController id="N2K-aI-rYa" customClass="ItemTableViewController" customModule="ContactU" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="183" sectionHeaderHeight="22" sectionFooterHeight="22" id="jFv-Hq-fXg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="183" id="RT2-ky-3Yg">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Item" rowHeight="183" id="RT2-ky-3Yg" customClass="ItemTableViewCell" customModule="ContactU" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="86" width="320" height="183"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RT2-ky-3Yg" id="53I-i0-Mdk">
@@ -25,14 +25,7 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BJf-Q4-hSQ">
-                                            <rect key="frame" x="109" y="24" width="49" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p1B-5v-ORr">
-                                            <rect key="frame" x="245" y="24" width="37" height="21"/>
+                                            <rect key="frame" x="109" y="24" width="128" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -66,8 +59,24 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p1B-5v-ORr">
+                                            <rect key="frame" x="235" y="24" width="61" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="CallBtn" destination="M1S-SW-gsq" id="TCZ-Oi-uDl"/>
+                                    <outlet property="MailBtn" destination="tTg-0q-OR7" id="XOv-PI-oIx"/>
+                                    <outlet property="TextBtn" destination="Tjx-2J-qYe" id="pPQ-iN-hDp"/>
+                                    <outlet property="contactDate" destination="p1B-5v-ORr" id="VCO-3h-gKo"/>
+                                    <outlet property="contactImageView" destination="6V0-dK-8Ct" id="46j-Ds-WdD"/>
+                                    <outlet property="contactName" destination="BJf-Q4-hSQ" id="E9v-na-lOs"/>
+                                    <outlet property="contactNote" destination="dpc-iN-4z6" id="7KQ-HG-ac8"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -78,7 +87,7 @@
                     <navigationItem key="navigationItem" id="Job-MH-cCZ">
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="lrO-nf-Ti5">
                             <connections>
-                                <segue destination="vrF-vK-XJ4" kind="push" id="Ei6-1K-82u"/>
+                                <segue destination="vrF-vK-XJ4" kind="push" id="D4W-TS-Ojr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -105,19 +114,15 @@
                                     <segue destination="geF-8E-9k0" kind="push" identifier="contactSegue" id="brP-Lg-AUg"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="uc5-vf-HNC">
-                                <rect key="frame" x="16" y="129" width="86" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="N75-Nl-56k">
-                                <rect key="frame" x="118" y="139" width="84" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="N75-Nl-56k">
+                                <rect key="frame" x="118" y="139" width="186" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aSJ-GZ-DPt">
-                                <rect key="frame" x="119" y="174" width="83" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aSJ-GZ-DPt">
+                                <rect key="frame" x="119" y="174" width="185" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -149,7 +154,14 @@
                                 <date key="date" timeIntervalSinceReferenceDate="451323030.291269">
                                     <!--2015-04-21 15:30:30 +0000-->
                                 </date>
+                                <connections>
+                                    <action selector="pickerChanged:" destination="vrF-vK-XJ4" eventType="valueChanged" id="7da-pz-TWt"/>
+                                </connections>
                             </datePicker>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy" id="uc5-vf-HNC">
+                                <rect key="frame" x="16" y="129" width="86" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -160,6 +172,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="EmailLabel" destination="aSJ-GZ-DPt" id="VPe-qb-JPG"/>
+                        <outlet property="NameLabel" destination="N75-Nl-56k" id="s1i-Bu-VOq"/>
+                        <outlet property="contactImageView" destination="uc5-vf-HNC" id="RRz-g5-JxY"/>
+                        <outlet property="datePicker" destination="itr-4p-96i" id="BG5-gm-To6"/>
+                        <outlet property="noteTextfield" destination="61h-nb-KPk" id="Dgl-2Y-8v2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bT3-rU-D3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

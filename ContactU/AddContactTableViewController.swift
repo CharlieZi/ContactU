@@ -107,7 +107,7 @@ class AddContactTableViewController: UITableViewController,UIImagePickerControll
         contact.contactImage = contactImageData
         
         SwiftCoreDataHelper.saveManagedObjectContext(moc)
-        self.navigationController?.popToRootViewControllerAnimated(true)
+        self.navigationController?.popViewControllerAnimated(true)
         
         
         

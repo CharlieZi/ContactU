@@ -42,6 +42,9 @@ class ContactTableViewController: UITableViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         self.loadData()
+        
+        
+
     }
     
     
@@ -97,9 +100,10 @@ class ContactTableViewController: UITableViewController {
         
         cell.contactName.text = firstName + " "+lastName
         cell.contactPhone.text = phone
-        cell.contactEmail.text = "teset"
+        cell.contactEmail.text = email
         
-        println("tstd")
+
+        
         
         
         
@@ -120,7 +124,7 @@ class ContactTableViewController: UITableViewController {
             
             delegate!.userDidSelectContact(contactDict.objectForKey("identifier") as! NSString)
             
-            self.navigationController?.popToRootViewControllerAnimated(true)
+            self.navigationController?.popViewControllerAnimated(true)
         }
     }
     
