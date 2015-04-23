@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB12ED411AE6A91C000BE790 /* AddContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB12ED401AE6A91C000BE790 /* AddContactTableViewController.swift */; };
+		CB12ED4A1AE75F4C000BE790 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB12ED491AE75F4C000BE790 /* ContactTableViewController.swift */; };
+		CB12ED4C1AE75FC8000BE790 /* ContactCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB12ED4B1AE75FC8000BE790 /* ContactCellTableViewCell.swift */; };
+		CB12ED4E1AE76185000BE790 /* AdditemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB12ED4D1AE76185000BE790 /* AdditemViewController.swift */; };
+		CB12ED561AE78216000BE790 /* ContactU.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = CB12ED531AE78216000BE790 /* ContactU.xcdatamodel */; };
+		CB12ED5B1AE7829C000BE790 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB12ED591AE7829C000BE790 /* ToDoItem.swift */; };
+		CB12ED5C1AE7829C000BE790 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB12ED5A1AE7829C000BE790 /* Contact.swift */; };
+		CB12ED9A1AE8BCC9000BE790 /* SwiftCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CB12ED991AE8BCC9000BE790 /* SwiftCoreDataHelper.m */; };
 		CBAB5C051AE688770055AD6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB5C041AE688770055AD6E /* AppDelegate.swift */; };
-		CBAB5C0A1AE688770055AD6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB5C091AE688770055AD6E /* ViewController.swift */; };
 		CBAB5C0D1AE688770055AD6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAB5C0B1AE688770055AD6E /* Main.storyboard */; };
 		CBAB5C0F1AE688770055AD6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAB5C0E1AE688770055AD6E /* Images.xcassets */; };
 		CBAB5C121AE688770055AD6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBAB5C101AE688770055AD6E /* LaunchScreen.xib */; };
 		CBAB5C1E1AE688780055AD6E /* ContactUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB5C1D1AE688780055AD6E /* ContactUTests.swift */; };
-		CBAB5C291AE689830055AD6E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBAB5C271AE689830055AD6E /* Model.xcdatamodeld */; };
-		CBAB5C2B1AE68D350055AD6E /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB5C2A1AE68D350055AD6E /* Contact.swift */; };
-		CBAB5C2D1AE68D350055AD6E /* ToDoitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB5C2C1AE68D350055AD6E /* ToDoitem.swift */; };
-		CBAB5C2F1AE6909C0055AD6E /* SwiftCoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB5C2E1AE6909C0055AD6E /* SwiftCoreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +33,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB12ED401AE6A91C000BE790 /* AddContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactTableViewController.swift; sourceTree = "<group>"; };
+		CB12ED461AE733EB000BE790 /* ContactU-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ContactU-Bridging-Header.h"; sourceTree = "<group>"; };
+		CB12ED491AE75F4C000BE790 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		CB12ED4B1AE75FC8000BE790 /* ContactCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellTableViewCell.swift; sourceTree = "<group>"; };
+		CB12ED4D1AE76185000BE790 /* AdditemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditemViewController.swift; sourceTree = "<group>"; };
+		CB12ED531AE78216000BE790 /* ContactU.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactU.xcdatamodel; sourceTree = "<group>"; };
+		CB12ED591AE7829C000BE790 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		CB12ED5A1AE7829C000BE790 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		CB12ED981AE8BCC9000BE790 /* SwiftCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftCoreDataHelper.h; sourceTree = "<group>"; };
+		CB12ED991AE8BCC9000BE790 /* SwiftCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftCoreDataHelper.m; sourceTree = "<group>"; };
 		CBAB5BFF1AE688770055AD6E /* ContactU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAB5C031AE688770055AD6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBAB5C041AE688770055AD6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBAB5C091AE688770055AD6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBAB5C0C1AE688770055AD6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBAB5C0E1AE688770055AD6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CBAB5C111AE688770055AD6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CBAB5C171AE688780055AD6E /* ContactUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAB5C1C1AE688780055AD6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBAB5C1D1AE688780055AD6E /* ContactUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUTests.swift; sourceTree = "<group>"; };
-		CBAB5C281AE689830055AD6E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		CBAB5C2A1AE68D350055AD6E /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = ../Contact.swift; sourceTree = "<group>"; };
-		CBAB5C2C1AE68D350055AD6E /* ToDoitem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoitem.swift; path = ../ToDoitem.swift; sourceTree = "<group>"; };
-		CBAB5C2E1AE6909C0055AD6E /* SwiftCoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftCoreDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +95,7 @@
 			children = (
 				CBAB5C311AE6A0540055AD6E /* helperClass */,
 				CBAB5C041AE688770055AD6E /* AppDelegate.swift */,
-				CBAB5C091AE688770055AD6E /* ViewController.swift */,
+				CB12ED401AE6A91C000BE790 /* AddContactTableViewController.swift */,
 				CBAB5C0B1AE688770055AD6E /* Main.storyboard */,
 				CBAB5C0E1AE688770055AD6E /* Images.xcassets */,
 				CBAB5C101AE688770055AD6E /* LaunchScreen.xib */,
@@ -125,9 +133,10 @@
 		CBAB5C301AE6A0490055AD6E /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				CBAB5C2C1AE68D350055AD6E /* ToDoitem.swift */,
-				CBAB5C2A1AE68D350055AD6E /* Contact.swift */,
-				CBAB5C271AE689830055AD6E /* Model.xcdatamodeld */,
+				CB12ED591AE7829C000BE790 /* ToDoItem.swift */,
+				CB12ED5A1AE7829C000BE790 /* Contact.swift */,
+				CB12ED531AE78216000BE790 /* ContactU.xcdatamodel */,
+				CB12ED461AE733EB000BE790 /* ContactU-Bridging-Header.h */,
 			);
 			name = DataModel;
 			sourceTree = "<group>";
@@ -135,7 +144,11 @@
 		CBAB5C311AE6A0540055AD6E /* helperClass */ = {
 			isa = PBXGroup;
 			children = (
-				CBAB5C2E1AE6909C0055AD6E /* SwiftCoreDataHelper.swift */,
+				CB12ED981AE8BCC9000BE790 /* SwiftCoreDataHelper.h */,
+				CB12ED991AE8BCC9000BE790 /* SwiftCoreDataHelper.m */,
+				CB12ED491AE75F4C000BE790 /* ContactTableViewController.swift */,
+				CB12ED4B1AE75FC8000BE790 /* ContactCellTableViewCell.swift */,
+				CB12ED4D1AE76185000BE790 /* AdditemViewController.swift */,
 			);
 			name = helperClass;
 			sourceTree = "<group>";
@@ -240,12 +253,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBAB5C2D1AE68D350055AD6E /* ToDoitem.swift in Sources */,
-				CBAB5C2B1AE68D350055AD6E /* Contact.swift in Sources */,
-				CBAB5C2F1AE6909C0055AD6E /* SwiftCoreDataHelper.swift in Sources */,
-				CBAB5C0A1AE688770055AD6E /* ViewController.swift in Sources */,
+				CB12ED5C1AE7829C000BE790 /* Contact.swift in Sources */,
+				CB12ED4C1AE75FC8000BE790 /* ContactCellTableViewCell.swift in Sources */,
+				CB12ED561AE78216000BE790 /* ContactU.xcdatamodel in Sources */,
+				CB12ED4E1AE76185000BE790 /* AdditemViewController.swift in Sources */,
+				CB12ED411AE6A91C000BE790 /* AddContactTableViewController.swift in Sources */,
+				CB12ED4A1AE75F4C000BE790 /* ContactTableViewController.swift in Sources */,
+				CB12ED5B1AE7829C000BE790 /* ToDoItem.swift in Sources */,
+				CB12ED9A1AE8BCC9000BE790 /* SwiftCoreDataHelper.m in Sources */,
 				CBAB5C051AE688770055AD6E /* AppDelegate.swift in Sources */,
-				CBAB5C291AE689830055AD6E /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,9 +390,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ContactU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ContactU/ContactU-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -384,9 +403,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ContactU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ContactU/ContactU-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -455,19 +476,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		CBAB5C271AE689830055AD6E /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				CBAB5C281AE689830055AD6E /* Model.xcdatamodel */,
-			);
-			currentVersion = CBAB5C281AE689830055AD6E /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = CBAB5BF71AE688770055AD6E /* Project object */;
 }

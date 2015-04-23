@@ -7,13 +7,13 @@
         <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="todoitem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ToDoitem" inverseName="contact" inverseEntity="ToDoitem" syncable="YES"/>
+        <relationship name="contact" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ToDoitem" inverseName="todoitem" inverseEntity="ToDoitem" syncable="YES"/>
     </entity>
     <entity name="ToDoitem" representedClassName="PRODUCT_MODULE_NAME.ToDoitem" syncable="YES">
         <attribute name="dueDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="todoitem" inverseEntity="Contact" syncable="YES"/>
+        <relationship name="todoitem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="contact" inverseEntity="Contact" syncable="YES"/>
     </entity>
     <elements>
         <element name="Contact" positionX="-45" positionY="0" width="128" height="148"/>
